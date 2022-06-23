@@ -1,3 +1,15 @@
+## News App Built With React & Next JS
+https://news-app-gules-eight.vercel.app/
+
+# Features
+- Global State Management with **redux toolkit** for an array of objects containing the data for each article.
+- Functional Components with dynamic date rendering from data and ordered in most recent posts based on date property in object.
+- SASS Modules to locally style components.
+- Dynamic router with nextJS such as /article/[id] when clicking on posts in the homepage.
+- Fully Responsive.
+- React Icons.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
