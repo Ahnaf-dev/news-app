@@ -9,6 +9,7 @@ https://news-app-gules-eight.vercel.app/
 - Fully Responsive.
 - React Icons.
 
+Design Inspired From: https://dribbble.com/shots/18549114-CIBIR-News-Landing-Page
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
