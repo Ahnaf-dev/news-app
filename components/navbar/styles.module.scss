@@ -1,0 +1,26 @@
+@use "../../styles/variables.scss" as variable;
+
+.h1 {
+  color: variable.$accent;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.nav {
+  background-color: variable.$light;
+  margin-bottom: 30px;
+  padding: 20px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__link {
+    font-weight: bold;
+
+    &:hover {
+      color: variable.$accent;
+    }
+  }
+}

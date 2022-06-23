@@ -1,0 +1,80 @@
+@use "../../styles/variables.scss" as variable;
+@use "../../styles/mixin.scss" as mixin;
+
+.news {
+  margin-bottom: 100px;
+  @include mixin.tablet {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+
+  &__image {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    margin-bottom: 20px;
+    clip-path: polygon(0% 0%, 85% 0, 100% 21%, 100% 100%, 0% 100%);
+
+    &__author {
+      background-color: white;
+      position: absolute;
+      padding: 20px;
+      left: 10px;
+      top: 60%;
+
+      @include mixin.tablet {
+        top: 65%;
+      }
+
+      p {
+        opacity: 0.8;
+        margin-bottom: 5px;
+      }
+    }
+
+    @include mixin.tablet {
+      margin-bottom: 0;
+      height: 400px;
+      flex: 0.5;
+    }
+  }
+
+  &__content {
+    @include mixin.tablet {
+      flex: 0.5;
+    }
+    h2 {
+      font-size: clamp(36px, 5vw, 60px);
+      margin-bottom: 20px;
+      @include mixin.tablet {
+        max-width: 600px;
+      }
+    }
+    p {
+      opacity: 0.8;
+
+      @include mixin.tablet {
+        max-width: 600px;
+        line-height: 2;
+      }
+    }
+
+    a {
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: variable.$accent;
+    }
+  }
+}
+
+.news__posted__date {
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 10px;
+  }
+}
